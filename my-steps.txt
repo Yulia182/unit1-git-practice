@@ -97,11 +97,78 @@ $ rm -r drinks
 
 
 ### Step 4
+$ git init
+Initialized empty Git repository in C:/Users/Yulia/Desktop/unit1-git-practice/.git/
 
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (master)
+$ git add .
+warning: in the working copy of 'my-steps.txt', LF will be replaced by CRLF the next time Git touches it
+
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (master)
+$ git commit -m 'first commit'
+[master (root-commit) a418e66] first commit
+ 8 files changed, 109 insertions(+)
+ create mode 100644 my-steps.txt
+ create mode 100644 plants/carrot.txt
+ create mode 100644 plants/pea.txt
+ create mode 100644 proteins/meats/crab.txt
+ create mode 100644 proteins/tofu.txt
+ create mode 100644 sweets/donut.txt
+ create mode 100644 veggies/carrot.txt
+ create mode 100644 veggies/pea.txt
 
 ### Step 5
+$ git remote add origin git@github.com:Yulia182/unit1-git-practice.git
 
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (master)
+$ git branch -M main
 
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git push -u origin maingit remote add origin git@github.com:Yulia182/unit1-git-practice.git
+error: src refspec maingit does not match any
+error: src refspec remote does not match any
+error: src refspec add does not match any
+error: src refspec origin does not match any
+error: src refspec git@github.com does not match any
+error: failed to push some refs to 'github.com:Yulia182/unit1-git-practice.git'
+
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git branch -M main
+
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 1.17 KiB | 240.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Yulia182/unit1-git-practice.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (main)
+$ touch menu.txt
+
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (main)
+$ ls
+menu.txt  my-steps.txt  plants/  proteins/  sweets/  veggies/
+
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my-steps.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
 ### Step 6
 
 
