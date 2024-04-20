@@ -171,6 +171,26 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ### Step 6
 
+$ git add .
+warning: in the working copy of 'my-steps.txt', LF will be replaced by CRLF the next time Git touches it
+
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git commit -m 'starting a menu'
+[main 74742fa] starting a menu
+ 2 files changed, 68 insertions(+), 1 deletion(-)
+ create mode 100644 menu.txt
+
+Yulia@LAPTOP-VHFIGMCN MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.77 KiB | 604.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Yulia182/unit1-git-practice.git
+   a418e66..74742fa  main -> main
+
 
 ### Step 7
 *** DO NOT RECORD STEP 7 ***
